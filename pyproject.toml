@@ -1,0 +1,47 @@
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caches"
+version = "1.0.0"
+dependencies = []
+requires-python = ">=3.12"
+authors = [
+  {name = "tikubonn"}
+]
+maintainers = [
+  {name = "tikubonn"}
+]
+description = "Provide some objects for caching."
+readme = "README.md"
+license = "AGPL-3.0"
+license-files = ["LICEN[CS]E"]
+keywords = []
+classifiers = [
+  "Programming Language :: Python"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest"
+]
+
+[project.urls]
+Homepage = "https://github.com/tikubonn/caches"
+Documentation = "https://github.com/tikubonn/caches/README.md"
+Repository = "https://github.com/tikubonn/caches.git"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = [
+  "caches"
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-v"
+testpaths = [
+  "test"
+]
