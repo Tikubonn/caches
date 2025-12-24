@@ -20,7 +20,10 @@ license = "AGPL-3.0"
 license-files = ["LICEN[CS]E"]
 keywords = []
 classifiers = [
-  "Programming Language :: Python"
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.12",
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: GNU Affero General Public License v3"
 ]
 
 [project.optional-dependencies]
@@ -35,9 +38,6 @@ Repository = "https://github.com/tikubonn/caches.git"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-py-modules = [
-  "caches"
-]
 
 [tool.pytest.ini_options]
 minversion = "6.0"
